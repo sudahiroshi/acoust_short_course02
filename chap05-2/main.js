@@ -53,7 +53,7 @@ let graphicsCtx = document.querySelector('#graph1').getContext( '2d' );
     // }
     let x = 0;
     for( let box of buffers ) {
-      console.log( box );
+//      console.log( box );
       for( let number of box ) {
         graphicsCtx.lineTo( x, 256+(number * 200.0 ) );
         x += 1;
