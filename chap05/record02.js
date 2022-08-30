@@ -22,7 +22,7 @@ document.querySelector( '#btn1' ).addEventListener( 'click', () => {
     // 波形データを取得
     let dataArray = new Uint8Array( analyser.fftSize );
     analyser.getByteTimeDomainData( dataArray );
-    // dataArray: Unsigned Int（8bit）なので，範囲は0〜255，128が音声データとしては0
+    // dataArray: Unsigned Int（8bit）なので，範囲は0〜255，128が振幅0
     console.log( dataArray );
 
     // グラフ描画
